@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Homepage Styles */
+  #homePage .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .overlay h1 {
+    font-size: 2rem;
+    color: #ff9800; /* Orange */
+    margin-bottom: 20px;
+  }
+  
+  .overlay button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Quiz Page Styles */
+  #quizPage {
+    background: linear-gradient(to bottom, #007bff, #4caf50); /* Blue to Green gradient */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+    color: #ff9800; /* Orange */
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #quizArea {
+    margin-top: 20px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Wizard Feedback */
+  .wizard-feedback {
+    font-size: 2rem;
+    margin-top: 20px;
+    animation: bounce 1s ease;
+  }
+  
+  .correct-wizard {
+    color: green;
+  }
+  
+  .incorrect-wizard {
+    color: red;
+  }
+  
+  /* Result Section */
+  #result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .result-item {
+    margin-bottom: 20px;
+  }
+  
+  .result-item p {
+    margin-bottom: 5px; /* Space between text and icon */
+  }
+  
+  .icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .cute-wizard {
+    font-size: 3rem;
+    color: #ff9800; /* Orange */
+    animation: bounce 1s ease infinite;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
